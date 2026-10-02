@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>언커먼 타올 인스타그램 개설안</title>
+<meta name="description" content="언커먼 타올 공식 인스타그램 계정 아이디·프로필·콘텐츠 기획안. 공동구매와 메타 광고 집행 전 셋팅 기준.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F2F5F5; --surface:#FFFFFF; --sunken:#E8EDEC;
+  --ink:#0E1A1C; --ink-2:#39494C; --muted:#6B7C7E;
+  --line:#D9E1E0; --line-soft:#E9EFEE;
+  --accent:#07A39E; --accent-deep:#057A76; --accent-wash:#E2F2F1;
+  --navy:#1B3A5C; --navy-wash:#E7EDF3;
+  --flag:#A8553C; --flag-wash:#F7EBE6;
+  --shadow-s:0 1px 2px rgba(14,26,28,.06);
+  --shadow-m:0 2px 6px rgba(14,26,28,.06), 0 12px 32px rgba(14,26,28,.07);
+  --shadow-l:0 8px 24px rgba(14,26,28,.10), 0 30px 70px rgba(14,26,28,.12);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1314; --surface:#141E20; --sunken:#0F1819;
+    --ink:#E6EEED; --ink-2:#BCCBCA; --muted:#8B9C9D;
+    --line:#223032; --line-soft:#1A2527;
+    --accent:#3FD0C9; --accent-deep:#6FDED9; --accent-wash:#0E2B2A;
+    --navy:#8FB4D8; --navy-wash:#13212E;
+    --flag:#D4917A; --flag-wash:#2B1C16;
+    --shadow-s:0 1px 2px rgba(0,0,0,.4);
+    --shadow-m:0 2px 6px rgba(0,0,0,.4), 0 12px 32px rgba(0,0,0,.35);
+    --shadow-l:0 8px 24px rgba(0,0,0,.5), 0 30px 70px rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1314; --surface:#141E20; --sunken:#0F1819;
+  --ink:#E6EEED; --ink-2:#BCCBCA; --muted:#8B9C9D;
+  --line:#223032; --line-soft:#1A2527;
+  --accent:#3FD0C9; --accent-deep:#6FDED9; --accent-wash:#0E2B2A;
+  --navy:#8FB4D8; --navy-wash:#13212E;
+  --flag:#D4917A; --flag-wash:#2B1C16;
+  --shadow-s:0 1px 2px rgba(0,0,0,.4);
+  --shadow-m:0 2px 6px rgba(0,0,0,.4), 0 12px 32px rgba(0,0,0,.35);
+  --shadow-l:0 8px 24px rgba(0,0,0,.5), 0 30px 70px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  font-size:16px; line-height:1.75; word-break:keep-all;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+.narrow{max-width:740px;}
+
+h1,h2,h3,h4{font-family:'Gothic A1','Apple SD Gothic Neo',sans-serif; margin:0; text-wrap:balance;}
+h1{font-size:clamp(32px,5.6vw,52px); font-weight:900; line-height:1.22; letter-spacing:-.025em;}
+h2{font-size:clamp(23px,3.4vw,31px); font-weight:800; line-height:1.3; letter-spacing:-.02em;}
+h3{font-size:18px; font-weight:800; line-height:1.45; letter-spacing:-.01em;}
+h4{font-size:15px; font-weight:700; line-height:1.5;}
+p{margin:0;}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:600;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--accent);
+}
+.dek{font-size:17.5px; color:var(--ink-2); line-height:1.85;}
+.small{font-size:14px; color:var(--muted); line-height:1.7;}
+strong{font-weight:600;}
+mark{background:var(--accent-wash); color:var(--ink); padding:1px 4px; border-radius:2px;}
+a{color:var(--accent-deep);}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* ============ HERO ============ */
+.hero{
+  background:var(--surface); border-bottom:1px solid var(--line);
+  padding:64px 0 54px;
+}
+.hero .eyebrow{margin-bottom:18px; display:block;}
+.hero h1{max-width:16ch;}
+.hero .dek{margin-top:22px; max-width:56ch;}
+.facts{
+  display:flex; flex-wrap:wrap; gap:10px; margin-top:32px;
+}
+.fact{
+  background:var(--paper); border:1px solid var(--line); border-radius:3px;
+  padding:9px 14px; font-size:13px; color:var(--ink-2);
+}
+.fact b{font-weight:700; color:var(--ink);}
+
+/* ============ SECTION ============ */
+section{padding:62px 0;}
+section.alt{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.shead{margin-bottom:34px;}
+.shead .eyebrow{display:block; margin-bottom:12px;}
+.shead .lede{margin-top:14px; color:var(--ink-2); max-width:62ch; font-size:16.5px;}
+
+/* ============ ROLE CARDS ============ */
+.roles{display:grid; gap:16px; grid-template-columns:1fr;}
+@media(min-width:860px){.roles{grid-template-columns:repeat(3,1fr);}}
+.role{
+  background:var(--surface); border:1px solid var(--line); border-radius:5px;
+  padding:26px 24px; box-shadow:var(--shadow-s); position:relative;
+}
+section.alt .role{background:var(--paper);}
+.role__n{
+  font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600;
+  color:var(--accent); letter-spacing:.1em; margin-bottom:14px; display:block;
+}
+.role h3{margin-bottom:10px;}
+.role p{font-size:14.5px; color:var(--ink-2); line-height:1.8;}
+.role .why{
+  margin-top:14px; padding-top:14px; border-top:1px dashed var(--line);
+  font-size:13.5px; color:var(--muted);
+}
+
+/* ============ HANDLE TABLE ============ */
+.tablewrap{overflow-x:auto; border:1px solid var(--line); border-radius:5px; background:var(--surface);}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:14.5px;}
+th,td{text-align:left; padding:14px 18px; border-bottom:1px solid var(--line-soft); vertical-align:top;}
+th{
+  font-size:11.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted); background:var(--paper); white-space:nowrap;
+}
+section.alt th{background:var(--sunken);}
+tr:last-child td{border-bottom:0;}
+td.h{font-family:'IBM Plex Mono',monospace; font-weight:600; color:var(--ink); white-space:nowrap;}
+.pick{
+  display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em;
+  background:var(--accent); color:#fff; padding:2px 8px; border-radius:2px; margin-left:8px;
+  vertical-align:middle;
+}
+:root[data-theme="dark"] .pick, :root:not([data-theme="light"]) .pick{color:#06211F;}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .pick{color:#fff;}}
+
+/* ============ PHONE MOCKUP ============ */
+.stage{
+  display:grid; gap:40px; align-items:start; grid-template-columns:1fr;
+}
+@media(min-width:900px){.stage{grid-template-columns:minmax(390px,420px) 1fr; gap:52px;}}
+
+.phone{
+  width:100%; max-width:400px; margin:0 auto;
+  background:#000; border-radius:40px; padding:9px;
+  box-shadow:var(--shadow-l);
+}
+.phone__screen{
+  background:#fff; color:#000; border-radius:32px; overflow:hidden;
+  font-family:-apple-system,'IBM Plex Sans KR',sans-serif;
+}
+.ig{font-size:14px; line-height:1.5;}
+.ig__status{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:12px 20px 4px; font-size:12.5px; font-weight:600; color:#000;
+}
+.ig__nav{
+  display:flex; align-items:center; gap:10px; padding:8px 14px 12px;
+}
+.ig__nav .back{font-size:19px; color:#000; line-height:1;}
+.ig__nav .handle{
+  font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:15.5px; color:#000;
+  display:flex; align-items:center; gap:5px;
+}
+.ig__nav .dots{margin-left:auto; color:#000; letter-spacing:1px;}
+.verified{
+  width:14px; height:14px; border-radius:50%; background:#3797F0; color:#fff;
+  font-size:9px; display:inline-flex; align-items:center; justify-content:center; font-weight:700;
+}
+
+.ig__top{display:flex; align-items:center; gap:22px; padding:4px 16px 0;}
+.ig__avatar{
+  width:84px; height:84px; border-radius:50%; flex-shrink:0;
+  background:linear-gradient(145deg,#0ABAB5,#067C79);
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; font-family:'Gothic A1',sans-serif; font-weight:900; font-size:12px;
+  letter-spacing:.04em; text-align:center; line-height:1.25; padding:6px;
+  border:1px solid rgba(0,0,0,.06);
+}
+.ig__stats{display:flex; gap:26px; flex:1; justify-content:space-around;}
+.ig__stat{text-align:center;}
+.ig__stat b{display:block; font-size:16px; font-weight:700; color:#000; font-variant-numeric:tabular-nums;}
+.ig__stat span{font-size:12.5px; color:#000;}
+
+.ig__bio{padding:12px 16px 0; color:#000;}
+.ig__name{font-size:14px; font-weight:700; margin-bottom:1px;}
+.ig__cat{font-size:13px; color:#737373; margin-bottom:5px;}
+.ig__biotext{font-size:13.5px; line-height:1.62; white-space:pre-line;}
+.ig__link{
+  margin-top:5px; font-size:13.5px; color:#00376B; font-weight:600;
+  display:flex; align-items:center; gap:5px;
+}
+.ig__link .ico{transform:rotate(-45deg); display:inline-block;}
+
+.ig__btns{display:flex; gap:6px; padding:14px 16px 0;}
+.ig__btn{
+  flex:1; text-align:center; font-size:13.5px; font-weight:600; color:#000;
+  background:#EFEFEF; border-radius:8px; padding:7px 4px;
+}
+.ig__btn.primary{background:#0095F6; color:#fff; flex:1.3;}
+.ig__btn.sq{flex:0 0 36px;}
+
+.ig__hl{display:flex; gap:15px; padding:18px 16px 14px; overflow-x:auto;}
+.ig__hl::-webkit-scrollbar{display:none;}
+.hl{text-align:center; flex-shrink:0; width:62px;}
+.hl__c{
+  width:62px; height:62px; border-radius:50%; border:1px solid #DBDBDB;
+  display:flex; align-items:center; justify-content:center; margin-bottom:5px;
+  font-family:'Gothic A1',sans-serif; font-weight:800; font-size:11px; color:#fff; text-align:center;
+  line-height:1.2; padding:4px;
+}
+.hl:nth-child(1) .hl__c{background:#1B3A5C;}
+.hl:nth-child(2) .hl__c{background:#0ABAB5;}
+.hl:nth-child(3) .hl__c{background:#8FA6A5; }
+.hl:nth-child(4) .hl__c{background:#374B4D;}
+.hl:nth-child(5) .hl__c{background:#fff; color:#9A9A9A; border:1px dashed #C7C7C7; font-weight:700;}
+.hl__t{font-size:11.5px; color:#000; line-height:1.3; letter-spacing:-.02em;}
+
+.ig__tabs{display:flex; border-top:1px solid #DBDBDB;}
+.ig__tab{
+  flex:1; text-align:center; padding:11px 0; font-size:17px; color:#C7C7C7;
+  border-bottom:1.5px solid transparent;
+}
+.ig__tab.on{color:#000; border-bottom-color:#000;}
+
+.ig__grid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:#fff;}
+.cell{
+  position:relative; aspect-ratio:1/1; overflow:hidden;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+}
+.cell__i{
+  position:absolute; top:5px; left:5px; z-index:3;
+  font-family:'IBM Plex Mono',monospace; font-size:9.5px; font-weight:600;
+  background:rgba(0,0,0,.55); color:#fff; border-radius:2px; padding:1px 4px;
+}
+.cell.ph{
+  background:repeating-linear-gradient(45deg,#EDF1F1,#EDF1F1 7px,#E4EAEA 7px,#E4EAEA 14px);
+  border:1px dashed #C3D0D0;
+}
+.cell.ph .lab{
+  font-size:10.5px; color:#5A6B6C; font-weight:600; line-height:1.4;
+  padding:6px; letter-spacing:-.02em;
+}
+.cell.ph .lab em{display:block; font-style:normal; font-size:9px; color:#86999A; font-weight:500; margin-top:3px;}
+.cell.card{padding:9px; flex-direction:column; justify-content:center; gap:4px;}
+.cell.card .k{
+  font-family:'Gothic A1',sans-serif; font-weight:900; letter-spacing:-.03em; line-height:1.08;
+}
+.cell.card .s{font-size:8.5px; font-weight:500; line-height:1.4; letter-spacing:-.02em;}
+.c-navy{background:#1B3A5C; color:#fff;}
+.c-teal{background:#0ABAB5; color:#fff;}
+.c-paper{background:#F0EEE9; color:#1B2A2C;}
+.c-ink{background:#17211F; color:#fff;}
+.cell .reel{
+  position:absolute; top:5px; right:6px; z-index:3; color:#fff; font-size:11px;
+  filter:drop-shadow(0 1px 2px rgba(0,0,0,.4));
+}
+
+/* ============ CALLOUTS beside phone ============ */
+.callouts{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line);}
+.co{display:grid; grid-template-columns:30px 1fr; gap:16px; padding:18px 0; border-bottom:1px solid var(--line);}
+.co__n{
+  width:24px; height:24px; border-radius:50%; background:var(--ink); color:var(--paper);
+  display:flex; align-items:center; justify-content:center; margin-top:3px;
+  font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:600;
+}
+.co h4{margin-bottom:5px;}
+.co p{font-size:14.5px; color:var(--ink-2); line-height:1.8;}
+.co .val{
+  display:inline-block; margin-top:9px; background:var(--sunken); border:1px solid var(--line);
+  border-radius:3px; padding:8px 12px; font-family:'IBM Plex Mono',monospace;
+  font-size:13px; color:var(--ink); white-space:pre-line; line-height:1.7;
+}
+section.alt .co .val{background:var(--paper);}
+
+/* ============ PILLARS ============ */
+.pillars{display:grid; gap:14px; grid-template-columns:1fr;}
+@media(min-width:760px){.pillars{grid-template-columns:repeat(2,1fr);}}
+.pil{
+  background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:4px; padding:22px 22px;
+}
+section.alt .pil{background:var(--paper);}
+.pil__top{display:flex; align-items:baseline; gap:10px; margin-bottom:9px;}
+.pil__pct{
+  font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--accent);
+  margin-left:auto; white-space:nowrap;
+}
+.pil p{font-size:14.5px; color:var(--ink-2); line-height:1.8;}
+.pil ul{margin:12px 0 0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:6px;}
+.pil li{font-size:13.5px; color:var(--muted); padding-left:14px; position:relative; line-height:1.65;}
+.pil li::before{content:"–"; position:absolute; left:0; color:var(--accent);}
+
+/* ============ TIMELINE ============ */
+.tl{display:flex; flex-direction:column; border-top:1px solid var(--line);}
+.tl__i{display:grid; grid-template-columns:120px 1fr 110px; gap:18px; padding:18px 0; border-bottom:1px solid var(--line); align-items:start;}
+@media(max-width:700px){.tl__i{grid-template-columns:1fr; gap:6px;}}
+.tl__w{
+  font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--accent);
+  letter-spacing:.04em; padding-top:3px;
+}
+.tl__b h4{margin-bottom:4px;}
+.tl__b p{font-size:14px; color:var(--ink-2); line-height:1.75;}
+.tl__d{
+  font-size:12.5px; color:var(--muted); text-align:right; padding-top:4px; white-space:nowrap;
+}
+@media(max-width:700px){.tl__d{text-align:left;}}
+.tl__d.hot{color:var(--flag); font-weight:600;}
+
+/* ============ WARNING ============ */
+.warn{
+  background:var(--flag-wash); border:1px solid var(--line); border-left:3px solid var(--flag);
+  border-radius:4px; padding:24px 24px; margin-top:20px;
+}
+.warn h3{color:var(--flag); margin-bottom:10px;}
+.warn p{font-size:14.5px; color:var(--ink-2); line-height:1.8;}
+.warn p+p{margin-top:10px;}
+
+/* ============ GRID PLAN TABLE ============ */
+.posts{display:grid; gap:12px; grid-template-columns:1fr;}
+@media(min-width:720px){.posts{grid-template-columns:repeat(3,1fr);}}
+.post{
+  background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:16px 16px;
+}
+section.alt .post{background:var(--paper);}
+.post__h{display:flex; align-items:center; gap:8px; margin-bottom:8px;}
+.post__n{
+  font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600;
+  background:var(--sunken); border:1px solid var(--line); border-radius:2px; padding:1px 6px; color:var(--ink-2);
+}
+.post__t{
+  font-size:10.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--accent);
+}
+.post h4{margin-bottom:6px; font-size:14.5px;}
+.post p{font-size:13.5px; color:var(--ink-2); line-height:1.75;}
+.post .cap{
+  margin-top:10px; padding-top:10px; border-top:1px dashed var(--line);
+  font-size:12.5px; color:var(--muted); line-height:1.7; white-space:pre-line;
+}
+
+/* ============ FOOTER ============ */
+footer{
+  background:var(--surface); border-top:1px solid var(--line);
+  padding:44px 0 60px; font-size:13.5px; color:var(--muted); line-height:1.85;
+}
+footer b{color:var(--ink-2); font-weight:600;}
+footer .sig{
+  margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:11.5px;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+}
+@media (prefers-reduced-motion:reduce){*{animation:none !important; transition:none !important;}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Uncommon Towel · Instagram Launch Plan</span>
+    <h1>광고를 켜기 전에,<br>계정부터 만들어야 합니다</h1>
+    <p class="dek">메타 광고를 본 사람이 제일 먼저 누르는 건 구매 버튼이 아니라 <strong>프로필</strong>입니다. 거기가 비어 있으면 그 사람은 돌아오지 않고, 광고비는 그대로 사라집니다. 공동구매를 제안받은 인플루언서도 제안서보다 계정을 먼저 봅니다.</p>
+    <div class="facts">
+      <span class="fact">제품 <b>페이스타월 단일</b></span>
+      <span class="fact">소재 <b>밤부얀 100% · 220g</b></span>
+      <span class="fact">가격 <b>장당 17,000원</b></span>
+      <span class="fact">증빙 <b>FITI 공인시험 6건</b></span>
+      <span class="fact">납품 <b>관공서·대학·기업 50여 곳</b></span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="shead narrow">
+      <span class="eyebrow">01 — Role</span>
+      <h2>이 계정이 해야 하는 일은 세 가지뿐입니다</h2>
+      <p class="lede">팔로워를 많이 모으는 계정이 아닙니다. 언커먼 타올의 인스타그램은 <strong>팔기 전에 믿게 만드는 자리</strong>입니다. 목표를 이렇게 좁혀야 콘텐츠가 흔들리지 않습니다.</p>
+    </div>
+    <div class="roles">
+      <div class="role">
+        <span class="role__n">ROLE 01</span>
+        <h3>광고 신뢰 담보</h3>
+        <p>메타 광고를 보고 넘어온 사람이 0.5초 안에 “이 브랜드 진짜네”를 판단하는 화면. 게시물이 3개뿐인 계정은 광고 전환율을 직접 깎아먹습니다.</p>
+        <p class="why">판단 기준 → 게시물 수, 최근 업로드 날짜, 성적서 하이라이트</p>
+      </div>
+      <div class="role">
+        <span class="role__n">ROLE 02</span>
+        <h3>공구 제안 레퍼런스</h3>
+        <p>제안서를 받은 크리에이터는 거의 예외 없이 계정부터 확인합니다. 본인 팔로워에게 팔아도 되는 브랜드인지를 여기서 결정합니다.</p>
+        <p class="why">판단 기준 → 납품처, 시험성적서, 과장 없는 말투</p>
+      </div>
+      <div class="role">
+        <span class="role__n">ROLE 03</span>
+        <h3>재구매 회수 창구</h3>
+        <p>공구는 고객을 데려오는 채널이고 수익은 자사몰 정상가에서 나옵니다. 공구로 들어온 고객을 붙잡아 둘 수 있는 무료 채널은 이것 하나입니다.</p>
+        <p class="why">판단 기준 → 공구 종료 후에도 올라오는 콘텐츠</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="shead narrow">
+      <span class="eyebrow">02 — Handle</span>
+      <h2>아이디는 브랜드명 그대로</h2>
+      <p class="lede">상표권을 가진 브랜드명이 있으니 변형할 이유가 없습니다. 숫자·밑줄·오타를 섞은 아이디는 인플루언서가 태그할 때 틀리고, 광고 소재에 적어도 신뢰가 떨어집니다. 위에서부터 확인해서 되는 걸 잡으시면 됩니다.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>순위</th><th>아이디</th><th>판단</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="mono">1</td>
+            <td class="h">uncommontowel<span class="pick">1순위</span></td>
+            <td>브랜드명 그대로. 말로 불러주기 쉽고 오타가 안 납니다. 가능하면 무조건 이것.</td>
+          </tr>
+          <tr>
+            <td class="mono">2</td>
+            <td class="h">uncommontowel.kr</td>
+            <td>1순위가 막혔을 때. 점(.)은 밑줄보다 읽기 쉽고 국내 브랜드임이 드러납니다.</td>
+          </tr>
+          <tr>
+            <td class="mono">3</td>
+            <td class="h">uncommontowel.official</td>
+            <td>공식 계정임을 분명히 합니다. 길지만 가품·사칭 대응에 유리합니다.</td>
+          </tr>
+          <tr>
+            <td class="mono">4</td>
+            <td class="h">uncommon.towel</td>
+            <td>최후 선택. 띄어쓰기 위치가 헷갈려 태그 실수가 생길 수 있습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="warn">
+      <h3>확인은 직접 하셔야 합니다</h3>
+      <p>인스타그램은 로그인 없이 아이디 선점 여부를 확인할 수 없어서 제가 대신 조회하지 못했습니다. <strong>가입 화면에서 아이디를 입력하면 바로 사용 가능 여부가 뜹니다.</strong> 위에서부터 넣어보시고 되는 걸 잡으시면 됩니다.</p>
+      <p>쓰지 않는 계정이 아이디를 선점하고 있다면 인스타그램 상표권 신고로 회수할 수 있습니다. 언커먼 타올은 <strong>24류·35류 상표등록증</strong>을 보유하고 있으니 근거는 충분합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">03 — Profile &amp; Feed</span>
+      <h2>개설 직후 이 화면이 되어야 합니다</h2>
+      <p class="lede">아래는 실제 인스타그램 프로필 화면을 그대로 옮긴 것입니다. 빗금 친 칸은 사진이 들어갈 자리이고, 색이 채워진 칸은 글자만으로 만드는 카드라 지금 바로 제작할 수 있습니다. 오른쪽 번호는 화면의 각 항목에 대한 설명입니다.</p>
+    </div>
+
+    <div class="stage">
+      <div class="phone">
+        <div class="phone__screen">
+          <div class="ig">
+            <div class="ig__status"><span class="mono">9:41</span><span class="mono">●●● ▮</span></div>
+
+            <div class="ig__nav">
+              <span class="back">‹</span>
+              <span class="handle">uncommontowel <span class="verified">✓</span></span>
+              <span class="dots">⋯</span>
+            </div>
+
+            <div class="ig__top">
+              <div class="ig__avatar">UN COMMON<br>TOWEL®</div>
+              <div class="ig__stats">
+                <div class="ig__stat"><b>9</b><span>게시물</span></div>
+                <div class="ig__stat"><b>0</b><span>팔로워</span></div>
+                <div class="ig__stat"><b>0</b><span>팔로우</span></div>
+              </div>
+            </div>
+
+            <div class="ig__bio">
+              <p class="ig__name">언커먼타올 | 밤부얀 페이스타월</p>
+              <p class="ig__cat">가정용품점</p>
+              <p class="ig__biotext">수건 하나만 만듭니다
+밤부얀 100% · 220g · 40×80cm
+FITI 공인 시험 6건 · OEKO-TEX 1등급
+관공서 · 대학 · 기업 50여 곳 납품</p>
+              <p class="ig__link"><span class="ico">🔗</span> uncommontowel.imweb.me</p>
+            </div>
+
+            <div class="ig__btns">
+              <div class="ig__btn primary">팔로우</div>
+              <div class="ig__btn">메시지</div>
+              <div class="ig__btn">이메일</div>
+              <div class="ig__btn sq">▾</div>
+            </div>
+
+            <div class="ig__hl">
+              <div class="hl"><div class="hl__c">왜<br>하나만</div><div class="hl__t">브랜드</div></div>
+              <div class="hl"><div class="hl__c">성적서<br>6건</div><div class="hl__t">증빙</div></div>
+              <div class="hl"><div class="hl__c">4<br>COLOR</div><div class="hl__t">컬러</div></div>
+              <div class="hl"><div class="hl__c">50+</div><div class="hl__t">납품처</div></div>
+              <div class="hl"><div class="hl__c">+</div><div class="hl__t">공구</div></div>
+            </div>
+
+            <div class="ig__tabs">
+              <div class="ig__tab on">▦</div>
+              <div class="ig__tab">▷</div>
+              <div class="ig__tab">👤</div>
+            </div>
+
+            <div class="ig__grid">
+              <div class="cell ph"><span class="cell__i">1</span><span class="lab">제품 대표컷<em>4색 롤 · 패키지</em></span></div>
+              <div class="cell card c-navy"><span class="cell__i">2</span><span class="k" style="font-size:30px;">220g</span><span class="s">뱀부얀 수건 주류는 170–200g</span></div>
+              <div class="cell ph"><span class="cell__i">3</span><span class="lab">세안 후 사용컷<em>얼굴에 닿는 순간</em></span></div>
+
+              <div class="cell card c-teal"><span class="cell__i">4</span><span class="k" style="font-size:24px;">99.9%</span><span class="s">황색포도상구균 감소<br>KS K 0693 · FITI</span></div>
+              <div class="cell ph"><span class="cell__i">5</span><span class="lab">패키지 정면<em>민트 박스 · 선물용</em></span></div>
+              <div class="cell card c-paper"><span class="cell__i">6</span><span class="k" style="font-size:15px;">밤부얀에는<br>‘수’가<br>없습니다</span><span class="s">30수·40수 표기의 진실</span></div>
+
+              <div class="cell ph"><span class="cell__i">7</span><span class="lab">직조 매크로<em>표면 클로즈업</em></span></div>
+              <div class="cell ph"><span class="cell__i">8</span><span class="lab">4색 플랫레이<em>화이트·아이보리·민트·그레이</em></span></div>
+              <div class="cell card c-ink"><span class="cell__i">9</span><span class="k" style="font-size:16px;">수건<br>하나만<br>만듭니다</span><span class="s">UNCOMMON TOWEL®</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callouts">
+        <div class="co">
+          <div class="co__n">1</div>
+          <div>
+            <h4>이름(Name) — 검색에 걸리는 유일한 칸</h4>
+            <p>인스타 검색은 아이디와 이름만 읽습니다. 소개글은 검색되지 않습니다. 그래서 이름 칸에 <strong>브랜드명 + 핵심 키워드</strong>를 같이 넣습니다. 30자 제한입니다.</p>
+            <span class="val">언커먼타올 | 밤부얀 페이스타월</span>
+          </div>
+        </div>
+        <div class="co">
+          <div class="co__n">2</div>
+          <div>
+            <h4>카테고리 — 가정용품점</h4>
+            <p>프로페셔널(비즈니스) 계정으로 전환하면 이름 아래에 표시됩니다. 광고 계정 연결과 인사이트를 쓰려면 전환이 필수입니다.</p>
+          </div>
+        </div>
+        <div class="co">
+          <div class="co__n">3</div>
+          <div>
+            <h4>소개글 — 수식어 대신 사실만</h4>
+            <p>이 브랜드는 ‘천연·친환경’ 같은 말을 쓰지 않는다는 걸 제안서에 못 박아 뒀습니다. 소개글도 같은 원칙으로 씁니다. 네 줄, 전부 검증된 숫자입니다.</p>
+            <span class="val">수건 하나만 만듭니다
+밤부얀 100% · 220g · 40×80cm
+FITI 공인 시험 6건 · OEKO-TEX 1등급
+관공서 · 대학 · 기업 50여 곳 납품</span>
+          </div>
+        </div>
+        <div class="co">
+          <div class="co__n">4</div>
+          <div>
+            <h4>링크 — 지금은 한 개만</h4>
+            <p>자사몰 리뉴얼이 끝나기 전까지는 링크트리처럼 여러 개를 거는 대신 <strong>공식몰 하나</strong>만 겁니다. 공구가 열리면 그 기간만 공구 페이지로 바꾸고, 끝나면 되돌립니다.</p>
+          </div>
+        </div>
+        <div class="co">
+          <div class="co__n">5</div>
+          <div>
+            <h4>프로필 사진 — 제품이 아니라 로고</h4>
+            <p>원형으로 잘리고 지름 40px 정도로 표시됩니다. 제품 사진은 이 크기에서 뭉개집니다. 민트 배경에 흰 로고를 꽉 차게 넣는 편이 피드·댓글·광고 어디서든 식별됩니다.</p>
+          </div>
+        </div>
+        <div class="co">
+          <div class="co__n">6</div>
+          <div>
+            <h4>하이라이트 — 스토리를 먼저 올려야 생깁니다</h4>
+            <p>하이라이트는 스토리에서만 만들 수 있습니다. 개설 첫 주에 아래 네 묶음을 스토리로 올려 고정해 두세요. 다섯 번째 칸은 공구가 시작되면 채웁니다.</p>
+            <span class="val">브랜드 · 증빙 · 컬러 · 납품처 · (공구)</span>
+          </div>
+        </div>
+        <div class="co">
+          <div class="co__n">7</div>
+          <div>
+            <h4>게시물 9개 — 광고를 켜기 위한 최소치</h4>
+            <p>3×3이 한 화면에 꽉 차야 계정이 비어 보이지 않습니다. 사진 5장, 글자 카드 4장 구성이라 <strong>촬영 없이도 절반은 바로 만들 수 있습니다.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="shead narrow">
+      <span class="eyebrow">04 — Content Pillars</span>
+      <h2>콘텐츠는 네 갈래로만</h2>
+      <p class="lede">이 브랜드의 무기는 감성이 아니라 <strong>증거</strong>입니다. 경쟁사가 ‘천연 대나무’라고 적을 때 언커먼은 ‘비스코스’라고 적고 성적서를 붙입니다. 그 태도를 그대로 콘텐츠 비율로 옮깁니다.</p>
+    </div>
+    <div class="pillars">
+      <div class="pil">
+        <div class="pil__top"><h3>증거</h3><span class="pil__pct">40%</span></div>
+        <p>숫자와 시험성적서. 이 계정의 중심축이고, 광고에서 가장 잘 먹히는 소재입니다.</p>
+        <ul>
+          <li>항균 99.9% — 황색포도상구균 · KS K 0693</li>
+          <li>알러지성 염료 22종 전부 검출한계 미만</li>
+          <li>흡수속도 57mm / 59mm · 바이렉법</li>
+          <li>세탁 견뢰도 전 항목 4–5급</li>
+          <li>OEKO-TEX 1등급 — 36개월 미만 영유아 기준</li>
+        </ul>
+      </div>
+      <div class="pil">
+        <div class="pil__top"><h3>질문</h3><span class="pil__pct">25%</span></div>
+        <p>카테고리 상식을 바로잡는 콘텐츠. 저장과 공유가 나오는 유일한 축이고, 경쟁사가 따라 할 수 없습니다.</p>
+        <ul>
+          <li>밤부얀에는 원래 ‘수’가 없습니다</li>
+          <li>항균은 원료가 아니라 후가공입니다</li>
+          <li>‘천연 대나무 수건’은 대부분 비스코스입니다</li>
+          <li>수건이 5일 지나면 생기는 일</li>
+          <li>젖은 각질층은 마찰을 3배까지 받습니다</li>
+        </ul>
+      </div>
+      <div class="pil">
+        <div class="pil__top"><h3>제품</h3><span class="pil__pct">25%</span></div>
+        <p>보유한 스튜디오 컷이 이미 충분합니다. 새로 찍지 않아도 당장 운영 가능합니다.</p>
+        <ul>
+          <li>4색 — 퓨어 화이트 · 에그 아이보리 · 아르떼 민트 · 플린트 그레이</li>
+          <li>민트 패키지 · 선물 구성</li>
+          <li>직조 매크로 · 라벨 디테일</li>
+          <li>욕실 연출컷 · 수납 장면</li>
+        </ul>
+      </div>
+      <div class="pil">
+        <div class="pil__top"><h3>신뢰</h3><span class="pil__pct">10%</span></div>
+        <p>다른 브랜드가 못 가진 자산입니다. 경찰청·법무부·롯데케미칼·대학 28곳에 이미 들어갑니다.</p>
+        <ul>
+          <li>납품처 50여 곳 — 로고는 각 기관 등록상표라 표기 방식 확인 필요</li>
+          <li>공구 후기 · UGC 리그램</li>
+          <li>세탁 가이드 · 첫 세탁 안내</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead narrow">
+      <span class="eyebrow">05 — First 9 Posts</span>
+      <h2>첫 9개 게시물</h2>
+      <p class="lede">아래 번호는 <strong>화면에 보이는 위치</strong>입니다. 올리는 순서는 반대로 <strong>9번부터</strong>입니다. 9번이 가장 오래된 글이 되어 맨 아래에 깔리고, 1번이 최신 글로 맨 위에 옵니다. 하루 1개씩 9일에 나눠 올리면 계정이 자연스럽게 쌓인 것처럼 보입니다.</p>
+    </div>
+    <div class="posts">
+      <div class="post">
+        <div class="post__h"><span class="post__n">9</span><span class="post__t">첫 게시물 · 카드</span></div>
+        <h4>수건 하나만 만듭니다</h4>
+        <p>검정 배경에 흰 글자. 브랜드 선언이자 계정의 바닥. 제품 사진 없이 문장만 올립니다.</p>
+        <p class="cap">본문 — 세수하고 나서, 화장 지우고 나서, 운동 끝나고. 하루에도 몇 번씩 얼굴에 닿는데 정작 뭘로 만들었는지 따지는 사람은 거의 없더라고요.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">8</span><span class="post__t">사진</span></div>
+        <h4>4색 플랫레이</h4>
+        <p>퓨어 화이트 · 에그 아이보리 · 아르떼 민트 · 플린트 그레이를 나란히. 보유 스튜디오 컷 사용.</p>
+        <p class="cap">본문 — 색 이름과 함께 “세트는 4색으로 조합됩니다” 안내.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">7</span><span class="post__t">사진</span></div>
+        <h4>직조 매크로</h4>
+        <p>표면을 바짝 당겨 찍은 컷. 220g 밀도가 눈으로 보이는 유일한 사진입니다.</p>
+        <p class="cap">본문 — 같은 밤부얀이라도 밀도·직조·후공정에서 갈린다는 이야기.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">6</span><span class="post__t">카드뉴스 · 5장</span></div>
+        <h4>밤부얀에는 ‘수’가 없습니다</h4>
+        <p>저장이 가장 많이 나올 콘텐츠. 제안서에 정리된 5단 논리를 그대로 옮기면 됩니다.</p>
+        <p class="cap">본문 — 시중의 “50수 밤부”는 마케팅 표기입니다. 저희는 100% BAMBOO VISCOSE로 적습니다.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">5</span><span class="post__t">사진</span></div>
+        <h4>패키지 정면</h4>
+        <p>민트 박스. 선물 수요를 여는 컷이고, 납품 실적과도 연결됩니다.</p>
+        <p class="cap">본문 — 기관 납품으로 검증된 구성이라는 점을 짧게.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">4</span><span class="post__t">카드</span></div>
+        <h4>항균 99.9%</h4>
+        <p>민트 배경에 숫자 하나. <strong>원료가 아니라 후가공 결과</strong>라고 분명히 적는 것이 이 브랜드의 차별점입니다.</p>
+        <p class="cap">본문 — 대나무라서 항균인 게 아닙니다. 녹여서 실로 뽑는 과정에서 그 성분은 남지 않습니다.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">3</span><span class="post__t">사진</span></div>
+        <h4>세안 후 사용 장면</h4>
+        <p>얼굴에 닿는 순간. 제품컷만 있으면 ‘공산품’처럼 보이기 때문에 사람이 쓰는 장면이 한 장은 필요합니다.</p>
+        <p class="cap">본문 — 젖은 각질층은 마른 상태보다 마찰을 최대 3배 받습니다.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">2</span><span class="post__t">카드</span></div>
+        <h4>220g</h4>
+        <p>네이비 배경에 숫자 하나. 뱀부얀 시장 주류가 170–200g이라는 포지셔닝의 핵심입니다.</p>
+        <p class="cap">본문 — 200g에서 210g으로 넘어갈 때 가격이 80% 뛰는 구간입니다.</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">1</span><span class="post__t">사진 · 대표</span></div>
+        <h4>제품 대표컷</h4>
+        <p>가장 잘 나온 한 장. 광고 소재로도 쓰고, 프로필에 들어온 사람이 제일 먼저 보는 칸입니다.</p>
+        <p class="cap">본문 — 제품 기본 스펙과 공식몰 안내.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="shead narrow">
+      <span class="eyebrow">06 — Reels</span>
+      <h2>릴스는 세 개면 충분합니다</h2>
+      <p class="lede">전부 책상 위에서 찍을 수 있고 모델도 필요 없습니다. 이 세 개가 광고 소재로도 그대로 쓰입니다. 공구를 맡길 크리에이터에게 넘길 레퍼런스이기도 합니다.</p>
+    </div>
+    <div class="posts">
+      <div class="post">
+        <div class="post__h"><span class="post__n">R1</span><span class="post__t">흡수 · 15초</span></div>
+        <h4>물 한 컵을 그대로 머금습니다</h4>
+        <p>수건 위에 물을 붓고 그대로 빨아들이는 장면을 한 컷으로. 편집 없이 배속만 조절했다고 자막에 적습니다.</p>
+        <p class="cap">근거 — 흡수속도 57mm / 59mm · 바이렉법 · KS K 0642 · FITI</p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">R2</span><span class="post__t">건조 · 20초</span></div>
+        <h4>같은 조건, 다른 결과</h4>
+        <p>일반 면 수건과 나란히 널고 타임랩스. 화면을 둘로 나눠 시간 자막을 띄웁니다.</p>
+        <p class="cap">주의 — 건조속도 성적서에 수치가 없으므로 <strong>숫자를 자막에 쓰지 않습니다.</strong></p>
+      </div>
+      <div class="post">
+        <div class="post__h"><span class="post__n">R3</span><span class="post__t">증빙 · 12초</span></div>
+        <h4>성적서 6장 넘기기</h4>
+        <p>시험성적서를 한 장씩 넘기며 항목과 결과만 자막으로. 가장 만들기 쉽고 신뢰도는 가장 높습니다.</p>
+        <p class="cap">주의 — 성적서 원본의 업체명·번호가 그대로 노출되어도 되는지 확인 후 촬영.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead narrow">
+      <span class="eyebrow">07 — Pre-Launch Checklist</span>
+      <h2>광고를 켜기까지 3주</h2>
+      <p class="lede">병목은 두 개입니다. <strong>쇼핑 태그 승인</strong>은 메타 심사라 기다리는 것 말고 방법이 없고, <strong>계정 워밍업</strong>은 건너뛰면 신규 계정이 광고 제한에 걸립니다. 둘 다 오늘 시작해야 3주 뒤에 켤 수 있습니다.</p>
+    </div>
+    <div class="tl">
+      <div class="tl__i">
+        <div class="tl__w">WEEK 0 · 당일</div>
+        <div class="tl__b">
+          <h4>계정 개설 · 프로페셔널 전환</h4>
+          <p>아이디 확보 → 프로페셔널(비즈니스) 계정 전환 → 카테고리·연락처 입력. 개인 계정으로는 광고를 돌릴 수 없습니다.</p>
+        </div>
+        <div class="tl__d">즉시</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 0 · 당일</div>
+        <div class="tl__b">
+          <h4>페이스북 페이지 생성 · 연결</h4>
+          <p>인스타만으로는 광고 집행이 제한됩니다. 같은 이름의 페이스북 페이지를 만들어 연결합니다.</p>
+        </div>
+        <div class="tl__d">즉시</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 0 · 1–2일</div>
+        <div class="tl__b">
+          <h4>비즈니스 관리자 · 광고 계정 · 결제수단</h4>
+          <p>Meta 비즈니스 관리자를 열고 인스타·페이지·광고 계정을 한 자산으로 묶습니다. 대표님 개인 계정이 아니라 <strong>회사 자산</strong>으로 묶어야 담당자가 바뀌어도 유지됩니다.</p>
+        </div>
+        <div class="tl__d">1–2일</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 0 · 즉시 신청</div>
+        <div class="tl__b">
+          <h4>커머스 관리자 — 쇼핑 태그 승인 신청</h4>
+          <p>게시물에 가격표를 붙이는 기능입니다. 메타 심사가 가장 오래 걸리므로 <strong>제일 먼저 신청</strong>해 두고 나머지를 진행합니다. 반려되면 재심사에 또 시간이 듭니다.</p>
+        </div>
+        <div class="tl__d hot">2–4주 ⚠</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 1</div>
+        <div class="tl__b">
+          <h4>픽셀 설치 · 도메인 인증 · 전환 이벤트 설정</h4>
+          <p>아임웹 관리자에 픽셀 ID를 넣고, 자사몰 도메인을 메타에서 인증합니다. 그다음 전환 이벤트 8개의 우선순위를 정합니다. 이걸 안 하면 iOS 사용자의 구매가 집계되지 않아 <strong>광고 성과가 실제보다 낮게 보입니다.</strong></p>
+        </div>
+        <div class="tl__d">2–3일</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 1–2</div>
+        <div class="tl__b">
+          <h4>게시물 9개 · 스토리 · 하이라이트 4개</h4>
+          <p>하루 1개씩 올립니다. 하루에 9개를 몰아 올리면 스팸으로 인식될 수 있습니다. 스토리를 매일 올려 하이라이트를 채웁니다.</p>
+        </div>
+        <div class="tl__d">9–10일</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 2–3</div>
+        <div class="tl__b">
+          <h4>계정 워밍업</h4>
+          <p>신규 계정이 바로 광고를 돌리면 제한이 걸리기 쉽습니다. 2주 정도는 자연 활동(게시·스토리·댓글 응답)만 하면서 계정 이력을 만듭니다.</p>
+        </div>
+        <div class="tl__d hot">2주 ⚠</div>
+      </div>
+      <div class="tl__i">
+        <div class="tl__w">WEEK 3</div>
+        <div class="tl__b">
+          <h4>소액 테스트 집행</h4>
+          <p>하루 1–2만 원으로 소재 3–4개를 돌려 반응을 봅니다. 처음부터 예산을 크게 넣지 않습니다.</p>
+        </div>
+        <div class="tl__d">5–7일</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap narrow">
+    <div class="shead">
+      <span class="eyebrow">08 — Risk</span>
+      <h2>공개 계정을 열기 전에 확인할 것</h2>
+    </div>
+    <div class="warn">
+      <h3>OEKO-TEX 인증서 유효기간</h3>
+      <p>보유 중인 인증서 <span class="mono">11-72267</span>의 유효기간이 <strong>2025년 2월 8일자로 만료</strong>되어 있습니다. 갱신본이 있다고 들었지만 아직 파일을 받지 못했습니다.</p>
+      <p>제안서는 특정 인플루언서에게만 보내는 비공개 문서였지만, <strong>인스타그램 소개글과 광고 소재는 불특정 다수가 보고 캡처합니다.</strong> 만료된 인증을 표기한 상태로 유료 광고를 돌리면 표시광고법 이슈가 될 수 있습니다. 갱신본 번호와 유효기간을 먼저 확인해 주세요.</p>
+    </div>
+    <div class="warn">
+      <h3>납품처 로고 사용 범위</h3>
+      <p>경찰청·법무부·롯데케미칼 등의 로고는 각 기관의 등록상표입니다. 제안서처럼 1:1로 전달하는 문서와 <strong>공개 게시물·광고 소재는 허용 범위가 다릅니다.</strong></p>
+      <p>안전한 쪽은 로고 없이 <strong>“관공서 · 대학 · 기업 50여 곳 납품”</strong>이라는 문구만 쓰는 것입니다. 로고를 쓰려면 기관별 동의를 받아야 합니다.</p>
+    </div>
+    <div class="warn">
+      <h3>건조속도는 숫자를 쓰지 않습니다</h3>
+      <p>FITI 성적서에 <span class="mono">146.4</span>라는 값이 있으나 <strong>단위 표기가 없어</strong> 제안서에서도 “기준 시험 완료”로만 적었습니다. 광고 소재에 단위 없는 숫자를 쓰면 근거를 댈 수 없습니다. 시험기관에 단위를 확인하기 전까지는 “빠르게 마른다”는 표현과 영상으로만 보여줍니다.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap narrow">
+    <p><b>이 문서로 결정하실 것은 두 가지입니다.</b> 아이디를 무엇으로 할지, 그리고 9개 게시물 중 사진 5장을 어느 컷으로 쓸지. 나머지는 이 기획대로 진행하면 됩니다.</p>
+    <p style="margin-top:12px;">카드 4장(220g · 99.9% · 밤부얀 ‘수’ · 브랜드 선언)은 글자만으로 만들기 때문에 <b>촬영 없이 오늘 제작 가능</b>합니다. 사진 5장은 보유하신 스튜디오 컷으로 대부분 해결됩니다.</p>
+    <p class="sig">Uncommon Towel® · Instagram Launch Plan · 노페일디자인</p>
+  </div>
+</footer>
+
+</body>
+</html>
